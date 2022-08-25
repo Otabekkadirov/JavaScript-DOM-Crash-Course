@@ -158,7 +158,7 @@
 // previousSibling
 // console.log(itemList.previousSibling);
 
-// previousSibling
+// previousElementSibling
 // console.log(itemList.previousElementSibling);
 
 // // Create a div
@@ -255,7 +255,8 @@
 //   console.log("Event type: " + e.type);
 // }
 
-let box = document.getElementById("box");
+// let box = document.getElementById("box");
+// let output = document.getElementById("output");
 
 // box.addEventListener("mouseenter", runEvent);
 // box.addEventListener("mouseleave", runEvent);
@@ -263,8 +264,42 @@ let box = document.getElementById("box");
 // box.addEventListener("mouseover", runEvent);
 // box.addEventListener("mouseout", runEvent);
 
-box.addEventListener("mousemove", runEvent);
+// box.addEventListener("mousemove", runEvent);
 
-function runEvent(e) {
-  console.log("Event type: " + e.type);
-}
+// function runEvent(e) {
+//   console.log("Event type: " + e.type);
+//   // output.innerHTML = `<h3>MouseX: ${e.offsetX} </h3><h3>MouseY: ${e.offsetY}</h3>`;
+//   // box.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},50)`;
+//   // document.body.style.backgroundColor = `rgb(${e.offsetX},${e.offsetY},40)`;
+// }
+
+// Keyboard events //
+// let itemInput = document.querySelector("input[type='text'");
+// let form = document.querySelector("form");
+// let output = document.getElementById("output");
+
+// itemInput.addEventListener("keydown", runEvent);
+// itemInput.addEventListener("keyup", runEvent);
+// itemInput.addEventListener("keypress", runEvent);
+
+// itemInput.addEventListener("focus", runEvent);
+// itemInput.addEventListener("blur", runEvent);
+
+// itemInput.addEventListener("cut", runEvent);
+// itemInput.addEventListener("paste", runEvent);
+
+// itemInput.addEventListener("input", runEvent); // it listens to anything you do
+
+// let select = document.querySelector("select");
+// select.addEventListener("change", runEvent); // it listens to something that changes. For example select input
+// select.addEventListener("input", runEvent); // input event does the same thing here
+
+// form.addEventListener("submit", runEvent);
+
+// function runEvent(e) {
+//   e.preventDefault();
+//   console.log(e);
+//   console.log("Event type: " + e.type);
+//   // console.log(e.target.value);
+//   // output.innerHTML = "<h3>" + e.target.value + "</h3>";
+// }

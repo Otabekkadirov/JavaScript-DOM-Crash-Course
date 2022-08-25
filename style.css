@@ -29,6 +29,9 @@ body {
 
 .header__wrapper {
   padding-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 h1 {
@@ -37,6 +40,7 @@ h1 {
   text-transform: uppercase;
   letter-spacing: 1.2px;
 }
+
 .main {
   padding: 4rem;
 }
@@ -59,7 +63,8 @@ form {
   gap: 2rem;
 }
 
-input[type="text"] {
+input[type="text"],
+select {
   flex-grow: 1;
   min-width: 0;
   padding: 0.5rem;
@@ -85,6 +90,10 @@ input[type="submit"] {
   input[type="submit"] {
     flex-grow: 1;
   }
+}
+.search-input {
+  max-width: 300px;
+  border: none;
 }
 
 .list-group {
@@ -124,4 +133,11 @@ input[type="submit"] {
 .button-block {
   display: block;
   width: 100%;
+}
+.delete-button {
+  background-color: tomato;
+  border: none;
+  cursor: pointer;
+  float: right;
+  font-size: 1.6rem;
 }
